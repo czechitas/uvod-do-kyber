@@ -2,4 +2,8 @@
 
 Veřejné materiály k [Czechitas](https://www.czechitas.cz/) kurzu [Úvod do kybernetické bezpečnosti](https://www.czechitas.cz/kurzy/uvod-do-kyberneticke-bezpecnosti).
 
-[Slovník zkratek](./Slovník-zkratek.md) - úvodní kopie slovníku zkratek z kurzů 2025
+* [Slovník zkratek](./Slovník-zkratek.md) - úvodní kopie slovníku zkratek z kurzů 2025
+* [Rozcestník](./Rozcestnik.md) - seznam online zdrojů užitečných informací
+* Terminologie podrobněji
+  * [CIA Triáda](./znalostni-baze/CIA-triada.md)
+  * Cybersecurity Kill Chain
