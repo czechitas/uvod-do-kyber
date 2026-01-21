@@ -13,6 +13,8 @@ Seznam pravidel používaný síťovými zařízeními, jako jsou routery nebo f
 
 ## Access Control (Řízení přístupu): 
 Proces, kterým organizace řídí a omezuje přístup k jejím systémům, aplikacím a datům. Zahrnuje identifikaci uživatelů a určení, ke kterým zdrojům mají mít přístup na základě jejich role nebo potřeb. 
+## Agile
+[DevOps](#devops)/[DevSecOps](#devsecops)
 ## APT (Advanced Persistent Threat) 
 Sofistikovaná skupina hackerů, často podporovanou státem, která provádí dlouhodobé špionážní nebo sabotážní operace proti konkrétním cílům. Cílem APT útoků je zůstat nedetekovaným po dlouhou dobu a získat přístup k citlivým informacím nebo systémům. 
 ## Asset (Aktivum) 
@@ -21,13 +23,20 @@ Cokoli, co má pro organizaci hodnotu a co je potřeba chránit, jako jsou poč�
 Proces ověření identity uživatele, zařízení nebo jiné entity v síti, obvykle pomocí hesel, biometrických dat nebo jiných form autentizačních faktorů. 
 ## Authorization (Autorizace) 
 Proces, který určuje, co autentizovaný uživatel může dělat, tedy jaké akce může provádět nebo jaká data může přistupovat či měnit po ověření jeho identity. 
+## Blue Team
+[Red Team](#red-team), [Purple Team](#purple-team)
 ## BYOD (Bring Your Own Device) 
 Politika nebo praxe umožňující zaměstnancům používat svá osobní zařízení, jako jsou smartphony a notebooky, pro pracovní účely a přístup k firemním sítím a datům. 
 ## CAPTCHA 
-  
 Ochranný mechanismus používaný na webových stránkách k ověření, zda uživatel je opravdový člověk a ne automatizovaný software. Typicky vyžaduje, aby uživatel zadal text z obrázku nebo splnil jiný úkol. 
+
+Populární způsob lovení obětí na webových stránkách je takzvaná "Fake CAPTCHA" - sociálním inženýrstvým donutí uživatele obejít ochrany prohlížeče spustěním škodlivého kódu přímo na operačním systému.
+
+![Příklad: fake captcha](./znalostni-baze/fake-captcha.jpeg)
 ## CIA Triad (Confidentiality, Integrity, Availability) 
-Základní principy kyberbezpečnosti zaměřené na ochranu informací. Důvěrnost chrání před neoprávněným přístupem, integrita zajišťuje správnost a úplnost dat, a dostupnost zaručuje, že data a systémy jsou dostupné legitimním uživatelům, když jsou potřeba. 
+Základní principy kyberbezpečnosti zaměřené na ochranu informací. Důvěrnost chrání před neoprávněným přístupem, integrita zajišťuje správnost a úplnost dat, a dostupnost zaručuje, že data a systémy jsou dostupné legitimním uživatelům, když jsou potřeba.
+>[!TIP]
+> Podrobněji rozepsáno ve [znalostní-báze / CIA-triáda](./znalostni-baze/CIA-triada.md). 
 ## CISO (Chief Information Security Officer) 
 Vedoucí pozice zodpovědná za strategii a správu kybernetické bezpečnosti v organizaci. CISO přebírá odpovědnost za ochranu informačních aktiv a technologií. 
 ## Cyber Kill Chain 
@@ -45,6 +54,10 @@ Proces, při němž se citlivá data zakrývají nebo nahrazují jinými, aby se
 Typ útoku, při kterém mnoho kompromitovaných systémů (obvykle infikovaných malwarem) zasílá velké množství požadavků na cílový systém nebo síťový zdroj, což způsobuje jeho přetížení a nedostupnost pro legitimní uživatele. 
 ## Demilitarized Zone (DMZ) 
 Fyzická nebo logická síťová sub-síť, která slouží jako další vrstva bezpečnosti mezi internetem a interní síťí organizace. DMZ obsahuje veřejně přístupné servery, jako jsou webové servery a e-mailové servery, a izoluje je od zbytku interní sítě. 
+## DevOps
+[Agile](#agile)
+## DevSecOps
+[Agile](#agile)
 ## DNSSEC (Domain Name System Security Extensions) 
 Sada bezpečnostních rozšíření pro DNS (Domain Name System), která poskytuje ověření původu DNS dat, zajišťuje integritu dat a přidává opatření proti útokům, jako je cache poisoning. 
 ## EDR (Endpoint Detection and Response) 
@@ -84,6 +97,9 @@ Koordinovaný postup reagování na bezpečnostní incidenty, který zahrnuje pl
 Koncept spojení různých zařízení a objektů s internetem, což umožňuje sběr a výměnu dat. Tyto zařízení mohou být náchylná k různým bezpečnostním rizikům. 
 ## ISO 27001 
 Mezinárodní standard, který stanovuje požadavky na systém řízení informační bezpečnosti (ISMS) pro organizace. Pomáhá organizacím ochránit jejich informace prostřednictvím řady požadavků na bezpečnostní opatření a řízení rizik, aby zajistily důvěrnost, integritu a dostupnost informačních aktiv. 
+## KPI
+Key Performance Indicator (Klíčové ukazatele výkonnosti)
+[Agile](#agile)
 ## Malware 
 Škodlivý software navržený s cílem poškodit, vykrást nebo jinak zneužít informační systémy a zařízení. Existuje mnoho typů malwaru, včetně virů, trojských koní, spyware, ransomware a adware. 
 ## MFA (Multi-Factor Authentication) 
@@ -93,6 +109,13 @@ Bezpečnostní systém, který vyžaduje více než jeden důkaz identity od už
 Typ kybernetického útoku, kde útočník tajně odposlouchává a někdy upravuje komunikaci mezi dvěma stranami, které si myslí, že komunikují přímo mezi sebou. Tento útok může být použit k získání citlivých informací, jako jsou přihlašovací údaje nebo finanční informace. 
 ## NAC (Network Access Control) 
 Bezpečnostní řešení, které umožňuje organizacím omezit přístup k jejich sítím na základě politik identity uživatele a stavu zařízení. NAC může zahrnovat autentizaci, autorizaci a sledování zařízení připojených k síti. 
+## NIDS (Network Intrusion Detection System)
+## NIPS (Network Intrusion Prevention System)
+
+### Příklady:
+* [Zeek](https://zeek.org/)
+* [Suricata](https://suricata.io/)
+* [Snort](https://www.snort.org/)
 ## NIST (National Institute of Standards and Technology) 
 Americká federální agentura, která vyvíjí technologické, metrické a standardizační normy včetně standardů pro kybernetickou bezpečnost, které pomáhají chránit informační systémy. 
 ## NIST Cybersecurity Framework 
@@ -114,12 +137,17 @@ Proces hodnocení, jaké dopady mohou mít nové projekty, systémy, procesy neb
 Jakékoli informace, které lze použít samostatně nebo v kombinaci s jinými informacemi k identifikaci, kontaktování nebo lokalizaci jednotlivce. To zahrnuje jméno, adresa, telefonní číslo, e-mailová adresa, sociální zabezpečení číslo, datum narození a mnoho dalších osobních údajů. 
 ## PKI (Public Key Infrastructure) 
 Systém potřebný pro digitální šifrování a digitální podpisy, který využívá páry veřejných a soukromých klíčů pro zabezpečení komunikace mezi dvěma stranami. PKI zahrnuje role, politiky a softwarové mechanismy, které spravují digitální certifikáty a veřejné-klíčové šifrování. 
+## Purple Team
+[Blue Team](#blue-team), [Red Team](#red-team)
 ## Ransomware 
 Typ malwaru, který šifruje soubory oběti a vyžaduje výkupné za jejich dešifrování. Útočníci často požadují platbu v kryptoměně, aby se vyhnuli sledování. 
-## Red Team/Blue Team 
+## Red Team
+[Blue Team](#blue-team), [Purple Team](#purple-team)
 V kybernetické bezpečnosti odkazuje na cvičení, kde "Red Team" simuluje útočníky útočící na informační systémy, zatímco "Blue Team" obhajuje tyto systémy. Cílem je posílit bezpečnostní opatření a připravit se na skutečné útoky. 
 ## Rootkit 
 Typ škodlivého softwaru, který poskytuje útočníkovi root nebo administrativní přístup k infikovanému počítači. Rootkity jsou navrženy tak, aby byly skryté a obtížně odstranitelné, a mohou maskovat jiný malware. 
+## SCRUM
+Metoda [Agile](#agile) projektového řízení
 ## Session Hijacking 
   
 Typ kybernetického útoku, kde útočník přebírá kontrolu nad komunikační seancí mezi dvěma stranami. Útočník může odchytit nebo předstírat platné session tokeny, aby získal neoprávněný přístup k citlivým informacím nebo službám. 
@@ -128,7 +156,9 @@ Protokol používaný pro bezpečný přenos souborů přes internet. SFTP šifr
 ## Security Awareness Training 
 Vzdělávací programy a iniciativy, které informují a vzdělávají zaměstnance o bezpečnostních hrozbách, nejlepších postupech a politikách. Cílem je zvýšit povědomí o bezpečnosti a změnit chování, aby se předešlo bezpečnostním incidentům. 
 ## SIEM (Security Information and Event Management) 
-Systémy a služby, které poskytují real-time analýzu bezpečnostních upozornění generovaných aplikacemi a síťovou infrastrukturou. SIEM pomáhá organizacím detekovat, sledovat, analyzovat a reagovat na bezpečnostní incidenty, zlepšuje obranu proti kybernetickým hrozbám a splňuje požadavky na dodržování předpisů. 
+Systémy a služby, které poskytují real-time analýzu bezpečnostních upozornění generovaných aplikacemi a síťovou infrastrukturou. SIEM pomáhá organizacím detekovat, sledovat, analyzovat a reagovat na bezpečnostní incidenty, zlepšuje obranu proti kybernetickým hrozbám a splňuje požadavky na dodržování předpisů.
+## Smishing 
+"SMS [Phishing](#phishing)" - phishing za použití mobilních SMS zpráv.
 ## SOC (Security Operations Center) 
 Specializované a vysoce technické centrum, které se nepřetržitě věnuje monitorování, hodnocení a ochraně informačních systémů organizace před bezpečnostními hrozbami a incidenty. SOC týmy používají pokročilé analytické nástroje a technologie, jako je SIEM, k proaktivní obraně infrastruktury. 
 ## SSL/TLS (Secure Sockets Layer/Transport Layer Security) 
@@ -146,6 +176,8 @@ Bezpečnostní metoda, která vyžaduje dvě oddělené formy ověření od uži
 Technologie, která umožňuje bezpečné připojení k internetu přes veřejnou síť. VPN vytváří šifrovaný "tunel" pro data, chrání osobní informace a umožňuje uživatelům bezpečně přistupovat k firemním nebo osobním síťovým zdrojům z jakéhokoli místa. 
 ## WAF (Web Application Firewall) 
 Specializovaný firewall navržený k ochraně webových aplikací tím, že monitoruje, filtruje a blokuje škodlivý provoz směřující k webovým aplikacím. WAF pomáhá chránit webové aplikace před různými bezpečnostními hrozbami, včetně SQL injection, cross-site scripting (XSS), a dalšími útoky zaměřenými na zranitelnosti aplikací. 
+## Vishing
+"Voice [Phishing](#phishing)" - technika manipulace/sociálního inženýrství za použití telefonu a telefonických hovorů.
 ## Whitehacking 
 Také známý jako etický hacking nebo penetrační testování, je praxe používání hackingových dovedností a metodik k identifikaci zranitelností a bezpečnostních mezer v informačních systémech organizace s cílem opravit je před tím, než je mohou zneužít zlomyslní útočníci. Whitehackeři pracují s povolením a ve prospěch vlastníků systémů, aby zlepšili jejich bezpečnost. 
 ## WPA3 (Wi-Fi Protected Access 3) 
