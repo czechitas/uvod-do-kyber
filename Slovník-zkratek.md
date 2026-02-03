@@ -33,6 +33,25 @@ Ochranný mechanismus používaný na webových stránkách k ověření, zda u�
 Populární způsob lovení obětí na webových stránkách je takzvaná "Fake CAPTCHA" - sociálním inženýrstvým donutí uživatele obejít ochrany prohlížeče spustěním škodlivého kódu přímo na operačním systému.
 
 ![Příklad: fake captcha](./znalostni-baze/fake-captcha.jpeg)
+
+## CERT 
+**(Computer/Cyber Emergency Response Team)** <br />
+Dřívější populární termín pro skupina specialistů na řešení nouzových (kybernetických) situací (s počítačem).<br />
+Může být:
+* virtuální (například jeden krizový manažer, který má vybrané specialisty v rámci organizace pro řešení krizových situací a povolává je podle potřeby), 
+* hybridní (core tým + spolupracující specialisté podle technologií), 
+* outsourcovaný/externí
+
+>[!WARNING]
+> **CERT/CSIRT** a **[SOC](#soc-security-operations-center)** jsou až příliš často zaměňované termíny. Byť je jejich činnost překrývá, SOC reší standardizované bezpečnostní situace (například alerty ze [SIEMu](#siem-security-information-and-event-management)) podle předem definovaného akčního plánu (tzv. [playbooku/"kuchařce"](#playbook)). Pokud se situace vymyká definovaným postupům, musí eskalovat detekce na vyšší místa (specialistům, CERTu/CSIRTu, atp.). <br />
+> CERT/CSIRT hledá řešení/zabezpečení/metody vyšetřování podle konkrétních situací nad rámec standardizovaných postupů, případně svůj postup pak standardizuje (i) pro SOC.<br />
+> Protože i na SOCu je spousta šikovných specialistů, hranice CERT/SOC se více a více smazávají (a manuální standardizovaná práce bývá nahrazována automatizací). Již více než 10 let tak vznikají různá "Cyber Fusion", "Hybrid Security", "[Agile](#agile) SecOps" atp. centra, poskytující outsourcingové služby.
+
+>[!NOTE]
+> [**CERT/CC**](https://sei.cmu.edu/divisions/cert/) (CERT Coordination Center) - vznikl jako první organizace svého druhu na světě v Pittsburgu, USA, v rámci Carnegie Mellon University. <br />
+> Protože však velmi rychle začaly vznikat podobné instituce po celém světě, například US-CERT, Carnegie Mellon University si nechala zaregistrovat ochrannou známku "CERT".<br />
+> Některé organizace zaplatily licenční poplatek za použití "CERT" v názvu týmu ("Žvýkačková banka CERT"), jiné ochrannou známku ignorovaly.<br />
+> Jako "bezlicencová" alternativa se postupně vžilo označení [CSIRT](#CSIRT)
 ## CIA Triad (Confidentiality, Integrity, Availability) 
 Základní principy kyberbezpečnosti zaměřené na ochranu informací. Důvěrnost chrání před neoprávněným přístupem, integrita zajišťuje správnost a úplnost dat, a dostupnost zaručuje, že data a systémy jsou dostupné legitimním uživatelům, když jsou potřeba.
 >[!TIP]
@@ -45,6 +64,9 @@ Model, který popisuje fáze kybernetického útoku od průzkumu až po exfiltra
 Soubor politik, technologií a kontrol, které chrání cloudové zdroje, data a infrastrukturu před hrozbami. Zahrnuje zabezpečení dat uložených v cloudu, ochranu přenosů dat a správu identit a přístupů. 
 ## Cyber Threat Intelligence 
 Informace shromažďované a analyzované s cílem porozumět hrozbám cílícím na organizaci. Tyto informace pomáhají organizacím předvídat, identifikovat a zmírnit potenciální útoky nebo bezpečnostní incidenty. 
+## CSIRT
+**Cyber Security Incident Response Team** <br />
+"Bezlicencový" akronym pro tým bezpečnostních odborníků jako alternativa pro (vizte) [CERT](#cert).
 ## Data Loss Prevention (DLP) 
 Technologie a procesy navržené k ochraně citlivých dat a zabránění jejich nechtěnému nebo neoprávněnému úniku mimo organizaci. DLP systémy monitorují a kontrolují datový provoz s cílem identifikovat a blokovat potenciální úniky dat. 
 ## Data Masking 
@@ -76,12 +98,29 @@ pomáhají zajistit, že kritické soubory a konfigurace nejsou neoprávněně m
 Bezpečnostní systém, který monitoruje a řídí příchozí a odchozí síťový provoz na základě předem definovaných bezpečnostních pravidel. Firewall může být softwarový, hardwarový, nebo kombinace obou a slouží jako bariéra mezi vnitřní sítí a vnějším světem k prevenci neautorizovaného přístupu. 
 ## GDPR (General Data Protection Regulation) 
 Obecné nařízení o ochraně osobních údajů je předpis Evropské unie, který poskytuje občanům kontrolu nad jejich osobními údaji a nařizuje, jak musí organizace tyto údaje zpracovávat. GDPR klade důraz na ochranu osobních údajů a soukromí občanů EU. 
+## GRC (Governance, Risk, and Compliance)
+Governance, Risk, and Compliance je integrovaný rámec pro řízení organizace, který spojuje správu, řízení rizik a dodržování předpisů do jednoho celku. Pomáhá firmám spolehlivě dosahovat cílů, eliminovat nejistotu a jednat v souladu s legislativou. Cílem je zvýšit efektivitu, snížit náklady a zajistit bezúhonné fungování. <br />
+Klíčové aspekty GRC:
+* **Governance** (Správa): Zajišťuje, že firemní cíle jsou v souladu se strategií a hodnotami, a propojuje organizační sila.
+* **Risk** (Riziko): Identifikuje, vyhodnocuje a řídí rizika, která by mohla ohrozit cíle organizace.
+* **Compliance** (Soulad): Zajišťuje dodržování externích předpisů, zákonů i interních směrnic. 
+## GUI (Graphical User Interface)
+*Grafické Uživatelské Rozhraní* <br />
+Na rozdíl od dříve běžných <abbr title="Text User Interface">TUI</abbr> (tedy systémů ovládaných klávesnicí přes příkazový řádek, např. MS DOS), GUI umožnilo nezaškolenému uživateli intuitivně používat operační systém a jeho aplikace bez nutnosti si nejprve pečlivě nastudovat manuál (co kam kde zadat s jakými parametry).
+>[!NOTE]
+>Pro představu vzniku prvních GUI operačních systémů doporučuji shlédnout film [Piráti ze Sillicon Valley (1995)](https://www.csfd.cz/film/31875-pirati-ze-silicon-valley/prehled/).
 ## HIDS (Host-based Intrusion Detection System) 
 Systém pro detekci narušení založený na konkrétním hostiteli (např. počítači), který monitoruje a analyzuje vnitřní operační systém a aplikace na známky narušení nebo podezřelé aktivity. 
 ## HIPAA (Health Insurance Portability and Accountability Act) 
 Americký zákon z roku 1996, který poskytuje směrnice pro ochranu soukromí a bezpečnost pacientských informací. HIPAA určuje, jak musí být zacházeno s osobními zdravotními informacemi (PHI) v zdravotnictví a souvisejících službách. 
 ## Honeypot 
 Bezpečnostní mechanismus sloužící jako past na útočníky, který vypadá jako skutečný systém, aplikace nebo data. Honeypoty jsou používány k odhalení, zaznamenání a analýze útoků, aniž by ohrozily skutečné zdroje. 
+## IaaC
+**Infrastructure as a Code** <br />
+Termín z [DevOps](#devops) prostředí. Místo stavby fyzických či virtuálních datacenter vše definuje přímo vývojář řešení. Například skrze Ansible, Terraform, Docker Compose, ... - A to včetně oddělení kontejnerizace aplikací, nastavení sítí, definice povolených přístupů na konkrétní zdroje a služby...
+
+Velmi populární mezi agilními týmy, protože nemusejí při vývoji čekat na různá jiná oddělení a poskytovatele (např. dostat povolení zakoupit server, jiný tým ho musí nainstalovat, další tým definuje rozsahy a přidělení IP adres, pak se čeká až se server donastaví správcem, pak se musí vyžádat o přístupy pro vývojáře, správce jim musí dle návodu nainstalovat odpovídající software, ... a léta běží).<br />
+Místo toho si vše napíše a definuje přímo vývojář a pošle to na jemu připravené [Cloudové](#cloud-security-bezpečnost-v-cloudu) zdroje. Od schválení funkčního řešení po jeho nasazení v produkčním prostředí tak mohou uplynout desítky minut, ne měsíců.
 ## IaaS (Infrastructure as a Service) 
 Model cloud computingu, který poskytuje virtuální výpočetní zdroje přes internet. IaaS umožňuje uživatelům spouštět jakékoli operační systémy nebo aplikace bez nutnosti fyzicky spravovat samotné servery. Poskytovatelé IaaS nabízejí zdroje jako jsou virtuální servery, úložiště a sítě.
  
@@ -89,6 +128,15 @@ Model cloud computingu, který poskytuje virtuální výpočetní zdroje přes i
 Systém a procesy určené k správě identit uživatelů a jejich přístupových práv ve firmě. IAM technologie umožňuje organizacím zajišťovat, že správní uživatelé mají přístup k těm správným zdrojům ve správný čas a pro správné účely. 
 ## IDS/IPS (Intrusion Detection System/Intrusion Prevention System)
 Bezpečnostní technologie; IDS je systém pro detekci narušení, který monitoruje síťový nebo systémový provoz na známky neoprávněné aktivity. IPS je systém pro prevenci narušení, který nejen detekuje narušení, ale je také schopen automaticky zasahovat a blokovat útočníky. 
+## ICT
+**Information and Communication Technologies** <br />
+Informační a komunikační technologie (ICT) zahrnují veškeré hardwarové, softwarové a síťové nástroje sloužící k vytváření, zpracování, ukládání a přenosu informací a dat. ICT propojuje výpočetní techniku s telekomunikacemi (internet, mobilní sítě), což umožňuje digitální komunikaci a zefektivňuje práci v podnicích, školách i státní správě. 
+### ICT - Hlavní součásti:
+* Hardware: Počítače, servery, smartphony, tablety, datová centra.
+* Software: Operační systémy, aplikace, síťové protokoly.
+* Komunikace: Internet, telekomunikační sítě, satelitní systémy. 
+### ICT vs. IT:
+Zatímco IT (informační technologie) se zaměřuje na správu dat a technologií, ICT představuje širší pojem zahrnující i telekomunikační komponenty a konvergenci zvukových/obrazových sítí s počítačovými sítěmi. 
 ## Incident Handling 
 Proces přípravy na, identifikace, vyšetřování a řešení bezpečnostních incidentů v organizaci. Cílem je minimalizovat dopad na organizaci a obnovit normální operace co nejrychleji. 
 ## Incident Response 
@@ -96,7 +144,10 @@ Koordinovaný postup reagování na bezpečnostní incidenty, který zahrnuje pl
 ## IoT (Internet of Things) 
 Koncept spojení různých zařízení a objektů s internetem, což umožňuje sběr a výměnu dat. Tyto zařízení mohou být náchylná k různým bezpečnostním rizikům. 
 ## ISO 27001 
-Mezinárodní standard, který stanovuje požadavky na systém řízení informační bezpečnosti (ISMS) pro organizace. Pomáhá organizacím ochránit jejich informace prostřednictvím řady požadavků na bezpečnostní opatření a řízení rizik, aby zajistily důvěrnost, integritu a dostupnost informačních aktiv. 
+Mezinárodní standard, který stanovuje požadavky na [systém řízení informační bezpečnosti (ISMS)](#isms) pro organizace. Pomáhá organizacím ochránit jejich informace prostřednictvím řady požadavků na bezpečnostní opatření a řízení rizik, aby zajistily důvěrnost, integritu a dostupnost informačních aktiv. 
+## ISMS
+**Information Security Management Systems** <br />
+[Systém řízení informační bezpečnosti](https://cs.wikipedia.org/wiki/Syst%C3%A9m_%C5%99%C3%ADzen%C3%AD_bezpe%C4%8Dnosti_informac%C3%AD)
 ## KPI
 Key Performance Indicator (Klíčové ukazatele výkonnosti)
 [Agile](#agile)
@@ -126,6 +177,10 @@ Otevřený standard pro přístupová oprávnění, který umožňuje uživatel�
 Proces shromažďování informací z veřejně dostupných zdrojů pro účely zpravodajství nebo bezpečnosti. 
 ## OTP (One-Time Password) 
 Jednorázové heslo, které poskytuje vyšší úroveň zabezpečení než tradiční statická hesla. OTP se obvykle generuje a je platné pouze po krátkou dobu. 
+## OWASP
+OWASP (Open Worldwide Application Security Project) je nezisková mezinárodní organizace a otevřená komunita zaměřená na zlepšování bezpečnosti softwaru a webových aplikací. Poskytuje bezplatné zdroje, nástroje, dokumentaci a standardy, jako je známý seznam nejkritičtějších zranitelností OWASP Top 10. 
+
+https://owasp.org/www-project-top-ten/
 ## Patch Management 
 Proces správy a aplikace oprav (patchů) a aktualizací pro software a systémy k odstranění zranitelností a chyb, které by mohly být zneužity kybernetickými útočníky. Správné patch management praktiky jsou klíčové pro udržení bezpečnosti IT infrastruktury.
  
@@ -148,6 +203,11 @@ V kybernetické bezpečnosti odkazuje na cvičení, kde "Red Team" simuluje úto
 Typ škodlivého softwaru, který poskytuje útočníkovi root nebo administrativní přístup k infikovanému počítači. Rootkity jsou navrženy tak, aby byly skryté a obtížně odstranitelné, a mohou maskovat jiný malware. 
 ## SCRUM
 Metoda [Agile](#agile) projektového řízení
+## SecOps
+**Security Operations** <br />
+Bývá většinou používáno místo označení [SOC](#soc-security-operations-center) v organizacích [Agilního](#agile) způsobu managementu (vizte [SCRUMM](#scrum)). Většinou jde jen o slovíčkaření, Operativa využívá standardizovaných postupů úplně stejně jako [SOC](#soc-security-operations-center).
+>[!TIP]
+> Neplést s [DevSecOps](#devsecops) - to už je termín přesněji definovaný pro nástroje a postupy zajištění tvorby bezpečného kódu od jeho návrhu až po vydání hotového produktu (software, IaaC, atp.)
 ## Session Hijacking 
   
 Typ kybernetického útoku, kde útočník přebírá kontrolu nad komunikační seancí mezi dvěma stranami. Útočník může odchytit nebo předstírat platné session tokeny, aby získal neoprávněný přístup k citlivým informacím nebo službám. 
